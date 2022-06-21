@@ -18,26 +18,26 @@ const array = [
   "フェアリー",
 ];
 let array2 = [];
-console.log(array);
-console.log(array2);
+//console.log(array);
+//console.log(array2);
 
 function setvalue() {
   array2 = [];
   for (let index = 0; index < 17; index++) {
     let judge = Math.floor(Math.random() * 17);
-    console.log(index + "回目スタート");
-    console.log(array2);
-    console.log(array[judge]);
-    console.log(!array2.includes(array[judge]));
+    //console.log(index + "回目スタート");
+    //console.log(array2);
+    //console.log(array[judge]);
+    //console.log(!array2.includes(array[judge]));
 
     if (!array2.includes(array[judge]) == false) {
       while (array2.includes(array[judge])) {
-        console.log("while分に入りました");
+        //console.log("while分に入りました");
         judge = Math.floor(Math.random() * 17);
-        console.log(judge + "ジャッチが" + array[judge] + "に変更");
+        //console.log(judge + "ジャッチが" + array[judge] + "に変更");
       }
     } else {
-      console.log("elseがわにようこそ");
+      //console.log("elseがわにようこそ");
     }
     array2[index] = array[judge];
   }
@@ -45,7 +45,7 @@ function setvalue() {
 
 setvalue();
 
-console.log(array2);
+//console.log(array2);
 
 function change() {
   for (let i = 0; i < 16; i++) {
@@ -62,8 +62,9 @@ function changeAgain(a) {
   }
 }
 
-console.log("konnitiwa");
+//console.log("konnitiwa");
 for (let i = 1; i < 8; i++) {
   setvalue();
   changeAgain(i);
 }
+console.log("@Hiropokeclub");
